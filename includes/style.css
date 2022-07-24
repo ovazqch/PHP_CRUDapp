@@ -1,0 +1,371 @@
+body {
+    font-family: Helvetica;
+    padding-top: 3em;
+    margin-bottom: 1em;
+}
+
+body .navbar {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    top: 0;
+}
+
+table {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: auto;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.downMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    display: flex;
+    justify-content: center;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 3em;
+}
+
+.pagination a {
+    font-weight: bold;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: grey;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #1658BE;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loginPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 75%;
+    padding-bottom: 3em;
+}
+
+.formContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer a {
+    text-align: center;
+}
+
+.loginPage h2 {
+    text-align: center;
+}
+
+.loginPage button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.addModel {
+    margin-bottom: 1em;
+}
+
+.addModel a {
+    background-color: #ee0405;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.addModel a:hover {
+    background-color: #1658BE;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.productDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+}
+
+.productDetail table {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: auto;
+    font-family: helvetica;
+    align-items: center;
+}
+
+.prodDisplay {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+.imgFlex {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 15em;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=password],
+select,
+textarea {
+    width: 15em;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #1658BE;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #ee0405;
+}
+
+.container {
+    border-radius: 5px;
+    width: 90%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.backDashboard a {
+    background-color: #ee0405;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.backDashboard a:hover {
+    background-color: #1658BE;
+}
+
+.editBtn:link {
+    background-color: #1658BE;
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.editBtn:visited {
+    color: #f2f2f2;
+}
+
+.editBtn:hover {
+    background-color: #ee0405;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.deleteBtn:link {
+    background-color: #1658BE;
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.deleteBtn:visited {
+    color: #f2f2f2;
+}
+
+.deleteBtn:hover {
+    background-color: #ee0405;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.pagContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    padding: 2em;
+    margin-top: 10em;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+}
+
+table .ErrorRed {
+    color: red;
+    font-size: 18px;
+}
+
+#imgDisplay {
+    width: 300px;
+    object-position: center top;
+}
